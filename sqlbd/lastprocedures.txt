@@ -1,0 +1,127 @@
+-- mostra todas as consultas dado um dia 
+
+DELIMITER //
+CREATE PROCEDURE AtletasComConsultasNoDia(dia datetime)
+BEGIN
+SELECT atletas.nome as Nome_Do_Atleta, testes.Local , PfS.nome as Profissional_De_Saúde,
+testes.tipoTestes as Tipo_De_Consulta, testes.DataTestes as Marcado_no_Dia  , 
+categoria.nome as Categoria, modalidade.nome as Modalidade 
+from atletas
+JOIN testes on atletas.idCivil = testes.FKatletas
+JOIN categoria on atletas.idCivil= categoria.FKatleta
+JOIN modalidade on categoria.FKmodalidade = modalidade.id
+join PfS on PfS.id=testes.fkpsaude
+where day(dia) = day(testes.DataTestes) and month(dia) = month(testes.DataTestes) and year(dia) = year(testes.DataTestes)
+ORDER BY testes.DataTestes ASC;
+end
+// DELIMITER ;
+
+call AtletasComConsultasNoDia('2016-05-16');
+
+-- ---------------------------------------------------------------------------------
+
+-- mostra todas as consultas agendadas
+DELIMITER //
+CREATE PROCEDURE TestesAgendados()
+BEGIN
+SELECT atletas.nome as Nome_Do_Atleta, testes.Local , PfS.nome as Profissional_De_Saúde, 
+testes.DataTestes as Marcado_no_Dia  , categoria.nome as Categoria, modalidade.nome as Modalidade 
+from atletas
+JOIN testes on atletas.idCivil = testes.FKatletas
+JOIN categoria on atletas.idCivil= categoria.FKatleta
+JOIN modalidade on categoria.FKmodalidade = modalidade.id
+join PfS on PfS.id=testes.fkpsaude
+where year(CURRENT_TIMESTAMP) < year(testes.DataTestes) 
+or (year(CURRENT_TIMESTAMP) < year(testes.DataTestes) and month(CURRENT_TIMESTAMP) < month(testes.DataTestes)) 
+or  (day(CURRENT_TIMESTAMP) <= day(testes.DataTestes) and month(CURRENT_TIMESTAMP) <= month(testes.DataTestes) 
+and year(CURRENT_TIMESTAMP) <= year(testes.DataTestes))
+ORDER BY testes.DataTestes ASC;
+end
+// DELIMITER ;
+
+call TestesAgendados();
+
+-- ---------------------------------------------------------------------
+
+-- mostra toda a informação de um atleta dado o seu id 
+DELIMITER //
+CREATE PROCEDURE InfoAtleta (numatleta int(11))
+BEGIN
+SELECT atletas.idCivil as Numero_De_Identificação_Do_Atleta , atletas.nome as Nome , 
+atletas.DoB as Data_De_Nascimento , atletas.email, atletas.contacto , atletas.CondicaoMedica ,
+categoria.nome as Categoria , modalidade.nome as Modalidade 
+from atletas
+JOIN categoria on atletas.idCivil = categoria.FKatleta
+JOIN modalidade on categoria.FKmodalidade = modalidade.id
+where atletas.idCivil =  numatleta ;
+END
+// DELIMITER ;
+
+call InfoAtleta(1450);
+
+
+-- ---------------------------------------------------------------------
+
+-- mostra testes agendados de um atleta dado o seu id
+DELIMITER //
+CREATE PROCEDURE TestesAtleta (numatleta int(11))
+BEGIN
+SELECT PfS.nome as Profissional_De_Saúde, testes.tipoTestes as Tipo_De_Consulta, 
+testes.DataTestes as Marcado_no_Dia , testes.id as Código_do_Teste, testes.Local 
+from atletas
+JOIN testes on atletas.idCivil = testes.FKatletas
+join PfS on PfS.id=testes.fkpsaude
+where (year(CURRENT_TIMESTAMP) < year(testes.DataTestes) 
+or (year(CURRENT_TIMESTAMP) < year(testes.DataTestes) and month(CURRENT_TIMESTAMP) < month(testes.DataTestes)) 
+or  (day(CURRENT_TIMESTAMP) <= day(testes.DataTestes) and month(CURRENT_TIMESTAMP) <= month(testes.DataTestes) 
+and year(CURRENT_TIMESTAMP) <= year(testes.DataTestes))) and atletas.idCivil =  numatleta ;
+
+END
+// DELIMITER ;
+
+call TestesAtleta(1450);
+
+
+-- ----------------------------------------------------------------------
+
+-- mostra o resultado de testes passados de um atleta dado o seu id
+DELIMITER //
+CREATE PROCEDURE ResultadoAtleta (numatleta int(11))
+BEGIN
+SELECT testes.id as Código_do_Teste , PfS.nome as Profissional_De_Saúde, 
+testes.tipoTestes as Tipo_De_Consulta, testes.DataTestes as Marcado_no_Dia , testes.Resultado
+from atletas
+JOIN testes on atletas.idCivil = testes.FKatletas
+join PfS on PfS.id=testes.fkpsaude
+where (year(CURRENT_TIMESTAMP) > year(testes.DataTestes) 
+or (year(CURRENT_TIMESTAMP) > year(testes.DataTestes) and month(CURRENT_TIMESTAMP) > month(testes.DataTestes)) 
+or  (day(CURRENT_TIMESTAMP) > day(testes.DataTestes) and month(CURRENT_TIMESTAMP) => month(testes.DataTestes) 
+and year(CURRENT_TIMESTAMP) => year(testes.DataTestes))) and atletas.idCivil =  numatleta ;
+
+END
+// DELIMITER ;
+
+call ResultadoAtleta(1450);
+
+
+-- -----------------------------------------------------------------------
+
+
+-- informaçao de um profissional de saude 
+DELIMITER //
+CREATE PROCEDURE infoPfS (idPfS int(11))
+BEGIN
+SELECT PfS.id as Numero_De_Identificação_Do_PfS , PfS.nome as Nome , 
+PfS.email, PfS.contacto , PfS.especialidade as Especialidade 
+from PfS
+where PfS.id =  idPfS ;
+
+END
+// DELIMITER ;
+
+call InfoPfS(1145);
+
+-- -----------------------------------------------------------------------
+
+
+

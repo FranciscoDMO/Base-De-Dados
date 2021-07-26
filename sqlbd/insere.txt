@@ -1,0 +1,50 @@
+SET GLOBAL log_bin_trust_function_creators = 1;
+
+
+/* SAMPLE DO POVOAMENTO DAS TABELAS */
+
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (1583,'João Tomás','1996-03-20');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (1723,'Ana Silva','1996-11-03');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (2949,'Manuel Coelho','1995-05-03');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (1340,'José Antunes','1995-12-11');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (4142,'Luís Andrade','1995-02-20');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (1450,'Carlos Lima','1993-07-16');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (1069,'Camila Dias','1999-01-30');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (0985,'Renata Alves','1980-12-07');
+INSERT INTO Trabalho.Atletas (IDatletas, nome, DoB) VALUES (0940,'Renata Alves','1983-04-23');
+
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (14532,'2015-08-23 11:30','Dr. Alberto Machado','Hospital de Braga',4142);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (12355,'2018-09-17 14:00','Dr. João Domingos','Clinica São José',4142);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (12345,'2017-11-20 13:30','Dra. Sara Oliveira','Hospital do Porto',2949);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (76533,'2016-12-12 09:30','Dr. Tiago Alves','Hospital do Porto',2949);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (85724,'2016-07-01 08:30','Dra. Maria Coelho','Hospital do Porto',1069);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (12358,'2016-08-30 09:30','Dra. Maria Coelho','Hospital do Porto',1069);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (85742,'2016-09-13 10:00','Dr. Alberto Machado','Hospital de Braga',1069);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (86523,'2016-05-16 10:30','Dr. Alberto Machado','Hospital de Braga',0985);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (75638,'2017-05-30 15:00','Dr. João Silva','Clinica de Gualtar',0985);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (55384,'2017-04-12 16:00','Dr. André Silva','Clinica de Gualtar',1450);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (26785,'2017-06-20 13:30','Dr. Alberto Machado','Hospital de Braga',1450);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (89874,'2017-11-10 11:00','Dra. Sara Oliveira','Clinica São José',1340);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (68478,'2017-03-20 10:00','Dr. Francisco Sobreiro','Hospital do Porto',1340);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (23566,'2018-09-19 16:30','Dr. Alberto Machado','Hospital de Braga',1723);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (78437,'2018-02-28 14:00','Dr. João Domingos','Clinica São José',1723);
+INSERT INTO Trabalho.Testes (IDtestes, DataTestes, Medico, nomeHospital, FKatletas) VALUES (27904,'2018-03-12 08:30','Dr. Manuel Salgado','Clinica São José',2949);
+
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (1, "Futebol");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (2, "Natação");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (3, "Ténis");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (4, "Ténis de Mesa");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (5, "Futsal");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (6, "Rugby");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (7, "Basquetebol");
+INSERT INTO Trabalho.Modalidades (IDmod, nome) VALUES (8, "Ciclismo");
+
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (11, "Masculino", 1, 1583);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (12, "Feminino", 1, 1723);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (33, "Singulares Feminino", 3, 1069);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (34, "Pares Feminino", 3, 1069);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (61, "Masculino", 6, 4142);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (72, "Feminino", 7, 0985);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (81, "Masculinho", 8, 1069);
+INSERT INTO Trabalho.categoria (IDcat, descricao, FKmodalidades, fkatleta) VALUES (73, "Feminino", 7, 0940);
+

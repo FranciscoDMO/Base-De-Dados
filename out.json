@@ -1,0 +1,548 @@
+[
+    {
+        "resultado": null, 
+        "tipo": "sangue", 
+        "data": "2016-09-13 10:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 34, 
+                    "modalidade": {
+                        "id": 3, 
+                        "nome": "Ténis"
+                    }, 
+                    "descricao": "something2", 
+                    "nome": "Pares Feminino"
+                }
+            ], 
+            "nome": "Camila Dias", 
+            "DoB": "1999-01-30 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1069, 
+            "contacto": "919922522", 
+            "email": "camilinha@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital de Braga", 
+        "id": 85742
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "aptidao fisica", 
+        "data": "2017-03-20 10:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 33, 
+                    "modalidade": {
+                        "id": 3, 
+                        "nome": "Ténis"
+                    }, 
+                    "descricao": "something4", 
+                    "nome": "Singulares Feminino"
+                }
+            ], 
+            "nome": "José Antunes", 
+            "DoB": "1995-12-11 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1340, 
+            "contacto": "919234522", 
+            "email": "jises@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital do Porto", 
+        "id": 68478
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "sangue", 
+        "data": "2017-11-10 11:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 33, 
+                    "modalidade": {
+                        "id": 3, 
+                        "nome": "Ténis"
+                    }, 
+                    "descricao": "something4", 
+                    "nome": "Singulares Feminino"
+                }
+            ], 
+            "nome": "José Antunes", 
+            "DoB": "1995-12-11 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1340, 
+            "contacto": "919234522", 
+            "email": "jises@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Clinica São José", 
+        "id": 89874
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina2", 
+        "data": "2017-04-12 16:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 73, 
+                    "modalidade": {
+                        "id": 7, 
+                        "nome": "Basquetebol"
+                    }, 
+                    "descricao": "something2", 
+                    "nome": "Feminino"
+                }
+            ], 
+            "nome": "Carlos Lima", 
+            "DoB": "1993-07-16 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1450, 
+            "contacto": "911924522", 
+            "email": "carlos@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Clinica de Gualtar", 
+        "id": 55384
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina", 
+        "data": "2016-08-30 09:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 11, 
+                    "modalidade": {
+                        "id": 1, 
+                        "nome": "Futebol"
+                    }, 
+                    "descricao": "something1", 
+                    "nome": "Masculino"
+                }
+            ], 
+            "nome": "João Tomás", 
+            "DoB": "1996-03-20 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1583, 
+            "contacto": "919904522", 
+            "email": "joaotomas@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital do Porto", 
+        "id": 12358
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina", 
+        "data": "2015-08-23 11:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 11, 
+                    "modalidade": {
+                        "id": 1, 
+                        "nome": "Futebol"
+                    }, 
+                    "descricao": "something1", 
+                    "nome": "Masculino"
+                }
+            ], 
+            "nome": "João Tomás", 
+            "DoB": "1996-03-20 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1583, 
+            "contacto": "919904522", 
+            "email": "joaotomas@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital de Braga", 
+        "id": 14532
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "ritmo cardiaco", 
+        "data": "2016-12-12 09:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 11, 
+                    "modalidade": {
+                        "id": 1, 
+                        "nome": "Futebol"
+                    }, 
+                    "descricao": "something1", 
+                    "nome": "Masculino"
+                }
+            ], 
+            "nome": "João Tomás", 
+            "DoB": "1996-03-20 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1583, 
+            "contacto": "919904522", 
+            "email": "joaotomas@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital do Porto", 
+        "id": 76533
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "stamina", 
+        "data": "2018-09-19 16:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 12, 
+                    "modalidade": {
+                        "id": 1, 
+                        "nome": "Futebol"
+                    }, 
+                    "descricao": "something1", 
+                    "nome": "Feminino"
+                }, 
+                {
+                    "idCat": 72, 
+                    "modalidade": {
+                        "id": 7, 
+                        "nome": "Basquetebol"
+                    }, 
+                    "descricao": "something3", 
+                    "nome": "Feminino"
+                }
+            ], 
+            "nome": "Ana Silva", 
+            "DoB": "1996-11-03 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1723, 
+            "contacto": "919904332", 
+            "email": " anasilva@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital de Braga", 
+        "id": 23566
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina3", 
+        "data": "2017-06-20 13:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 12, 
+                    "modalidade": {
+                        "id": 1, 
+                        "nome": "Futebol"
+                    }, 
+                    "descricao": "something1", 
+                    "nome": "Feminino"
+                }, 
+                {
+                    "idCat": 72, 
+                    "modalidade": {
+                        "id": 7, 
+                        "nome": "Basquetebol"
+                    }, 
+                    "descricao": "something3", 
+                    "nome": "Feminino"
+                }
+            ], 
+            "nome": "Ana Silva", 
+            "DoB": "1996-11-03 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 1723, 
+            "contacto": "919904332", 
+            "email": " anasilva@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital de Braga", 
+        "id": 26785
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "raio x", 
+        "data": "2017-11-20 13:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 81, 
+                    "modalidade": {
+                        "id": 8, 
+                        "nome": "Ciclismo"
+                    }, 
+                    "descricao": "something2", 
+                    "nome": "Masculinho"
+                }
+            ], 
+            "nome": "Manuel Coelho", 
+            "DoB": "1995-05-03 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 2949, 
+            "contacto": "919204522", 
+            "email": " manuel@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital do Porto", 
+        "id": 12345
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina4", 
+        "data": "2018-03-12 08:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 81, 
+                    "modalidade": {
+                        "id": 8, 
+                        "nome": "Ciclismo"
+                    }, 
+                    "descricao": "something2", 
+                    "nome": "Masculinho"
+                }
+            ], 
+            "nome": "Manuel Coelho", 
+            "DoB": "1995-05-03 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 2949, 
+            "contacto": "919204522", 
+            "email": " manuel@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Clinica São José", 
+        "id": 27904
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina3", 
+        "data": "2017-05-30 15:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 81, 
+                    "modalidade": {
+                        "id": 8, 
+                        "nome": "Ciclismo"
+                    }, 
+                    "descricao": "something2", 
+                    "nome": "Masculinho"
+                }
+            ], 
+            "nome": "Manuel Coelho", 
+            "DoB": "1995-05-03 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 2949, 
+            "contacto": "919204522", 
+            "email": " manuel@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Clinica de Gualtar", 
+        "id": 75638
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina2", 
+        "data": "2016-05-16 10:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 81, 
+                    "modalidade": {
+                        "id": 8, 
+                        "nome": "Ciclismo"
+                    }, 
+                    "descricao": "something2", 
+                    "nome": "Masculinho"
+                }
+            ], 
+            "nome": "Manuel Coelho", 
+            "DoB": "1995-05-03 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 2949, 
+            "contacto": "919204522", 
+            "email": " manuel@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital de Braga", 
+        "id": 86523
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "sangue", 
+        "data": "2018-09-17 14:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 61, 
+                    "modalidade": {
+                        "id": 6, 
+                        "nome": "Rugby"
+                    }, 
+                    "descricao": "something4", 
+                    "nome": "Masculino"
+                }
+            ], 
+            "nome": "Luís Andrade", 
+            "DoB": "1995-02-20 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 4142, 
+            "contacto": "919924522", 
+            "email": " luis@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Clinica São José", 
+        "id": 12355
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "alimentaçao", 
+        "data": "2018-02-28 14:00:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 61, 
+                    "modalidade": {
+                        "id": 6, 
+                        "nome": "Rugby"
+                    }, 
+                    "descricao": "something4", 
+                    "nome": "Masculino"
+                }
+            ], 
+            "nome": "Luís Andrade", 
+            "DoB": "1995-02-20 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 4142, 
+            "contacto": "919924522", 
+            "email": " luis@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Clinica São José", 
+        "id": 78437
+    }, 
+    {
+        "resultado": null, 
+        "tipo": "rotina", 
+        "data": "2016-07-01 08:30:00", 
+        "atleta": {
+            "categorias": [
+                {
+                    "idCat": 61, 
+                    "modalidade": {
+                        "id": 6, 
+                        "nome": "Rugby"
+                    }, 
+                    "descricao": "something4", 
+                    "nome": "Masculino"
+                }
+            ], 
+            "nome": "Luís Andrade", 
+            "DoB": "1995-02-20 00:00:00", 
+            "CondicaoMedica": null, 
+            "idCivil": 4142, 
+            "contacto": "919924522", 
+            "email": " luis@gmail.com"
+        }, 
+        "pfs": {
+            "email": "dralberto@hotmail.com", 
+            "contacto": "911123345", 
+            "idPfs": 2134, 
+            "especialidade": "fisioterapia", 
+            "nome": "Dr. Alberto Machado"
+        }, 
+        "local": "Hospital do Porto", 
+        "id": 85724
+    }
+]
